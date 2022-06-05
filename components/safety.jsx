@@ -2,12 +2,12 @@ import { Box, Flex, Image, Stack, Text } from "@chakra-ui/react"
 
 const Safety = () => {
     return(
-        <Box pt='122px' px={{md:'40px',lg:'60px',xl:'120px','2xl':'120px'}} pb='151px'>
+        <Box pt='122px' px={{base:'10px',md:'40px',lg:'60px',xl:'120px','2xl':'120px'}} pb='151px'>
             <Flex direction={{base:'column',md:'column',lg:'row',xl:'row','2xl':'row'}}>
                 <Box>
                     <Text fontSize='64px' fontWeight='700' color='#0E1035'>Safety</Text>
                     <Text mt='32px' mb='65px' fontSize='24px' fontWeight='500' color='#676767'>It is a matter of pride for Travira Air that we have one of the best air charter safety records in the region</Text>
-                    <Stack direction='row' spacing='48px'>
+                    <Stack direction={{base:'column',md:'row',lg:'row',xl:'row','2xl':'row'}} spacing='48px'>
                         <Box>
                                 <Text fontSize='22px' fontWeight='700' color='#0E1035'><u>MANAGEMENT COMMITMENT</u></Text>
                                 <Text my='24px' fontSize='22px' fontWeight='700' color='#0E1035'><u>IT-BASED TRACKING AND MONITORING</u></Text>

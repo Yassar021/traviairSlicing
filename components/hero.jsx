@@ -62,7 +62,7 @@ function DrawerExample() {
 
 const Hero = () => {
     return(
-        <Box pt='48px' px={{md:'20px',lg:'60px',xl:'120px','2xl':'120px'}} pb='100px'>
+        <Box pt='48px' px={{base:'10px',md:'20px',lg:'60px',xl:'120px','2xl':'120px'}} pb='100px'>
             <Stack direction='row' justifyContent='space-between' alignItems='center'>
                 <Image src='/logo.png' w='122px' h='122px' alt="logo" />
                 <Flex display={{base:'inline', md:'inline', lg:'none', xl:'none', '2xl': 'none'}}>
@@ -104,7 +104,7 @@ const Hero = () => {
 
             <Stack mt='175px' direction='row'>
               <Box >
-                <Text fontSize='64px' fontWeight='700'>
+                <Text fontSize={{base:'48px',md:'64px',lg:'64px',xl:'64px','2xl':'64px'}} fontWeight='700'>
                   <span color='#2F80ED'>World class</span> charter and maintenance flights
                 </Text>
                 <Text mt='34px' fontSize='24px' fontWeight='500'>
@@ -114,7 +114,7 @@ const Hero = () => {
                         mt='82px'
                         size='lg'
                         height='109px'
-                        width='342px'
+                        width={{base:'270px',md:'342px',lg:'342px',xl:'342px','2xl':'342px'}}
                         border='1px'
                         borderColor='#0E1035'
                         fontFamily='Poppins'
@@ -132,7 +132,7 @@ const Hero = () => {
                         Booking Now
                     </Button>
               </Box>
-              <Box  w='1361px' backgroundImage='/a-hero.png' backgroundRepeat='no-repeat' backgroundPosition='center'  backgroundSize='cover'>
+              <Box display={{base:'none',md:'inline',lg:'inline',xl:'inline', '2xl':'inline'}}  w='1361px' backgroundImage='/a-hero.png' backgroundRepeat='no-repeat' backgroundPosition='center'  backgroundSize='cover'>
                 {/* <Image src="/a-hero.png"  alt=""></Image> */}
               </Box>
             </Stack>
