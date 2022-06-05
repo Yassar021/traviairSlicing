@@ -2,8 +2,8 @@ import { Box, Flex, Image, Stack, Text } from "@chakra-ui/react"
 
 const Safety = () => {
     return(
-        <Box pt='122px' px='120px' pb='151px'>
-            <Flex direction='row'>
+        <Box pt='122px' px={{md:'40px',lg:'60px',xl:'120px','2xl':'120px'}} pb='151px'>
+            <Flex direction={{base:'column',md:'column',lg:'row',xl:'row','2xl':'row'}}>
                 <Box>
                     <Text fontSize='64px' fontWeight='700' color='#0E1035'>Safety</Text>
                     <Text mt='32px' mb='65px' fontSize='24px' fontWeight='500' color='#676767'>It is a matter of pride for Travira Air that we have one of the best air charter safety records in the region</Text>
@@ -24,7 +24,7 @@ const Safety = () => {
                     </Stack>
                 </Box>
                 <Box  ml='44px'>
-                    <Image src='logo-safety.png' w='779px' h='577px' alt="" />
+                    <Image mt={{base:'20px',md:'20px',lg:'0px',xl:'0px','2xl':'0px'}} src='logo-safety.png' w='779px' h='577px' alt="" />
                 </Box>
             </Flex>
         </Box>

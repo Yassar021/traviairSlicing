@@ -7,8 +7,13 @@ function DrawerExample() {
   
     return (
       <>
-        <Button ref={btnRef} fontFamily='Poppins' bgColor='#2F80ED' color='#fff' w='98px' h='48px' onClick={onOpen}>
-          Menu
+        <Button rightIcon={<svg width="30" height="25" viewBox="0 0 30 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M22.0027 12.7014H10.0027" stroke="#fff" strokeWidth="1.7" strokeLinecap="round" strokeLinejoin="round"/>
+        <path d="M25.0027 5.70142H7.00269" stroke="#fff" strokeWidth="1.7" strokeLinecap="round" strokeLinejoin="round"/>
+        <path d="M25.0027 19.7014H7.00269" stroke="#fff" strokeWidth="1.7" strokeLinecap="round" strokeLinejoin="round"/>
+        </svg>
+        } ref={btnRef} fontFamily='Poppins' bgColor='#0E1035' color='#fff' w='auto' h='48px' onClick={onOpen}>
+          
         </Button>
         <Drawer
           isOpen={isOpen}
@@ -57,7 +62,7 @@ function DrawerExample() {
 
 const Hero = () => {
     return(
-        <Box pt='48px' px='122px' pb='100px'>
+        <Box pt='48px' px={{md:'20px',lg:'60px',xl:'120px','2xl':'120px'}} pb='100px'>
             <Stack direction='row' justifyContent='space-between' alignItems='center'>
                 <Image src='/logo.png' w='122px' h='122px' alt="logo" />
                 <Flex display={{base:'inline', md:'inline', lg:'none', xl:'none', '2xl': 'none'}}>
@@ -81,7 +86,15 @@ const Hero = () => {
                         fontFamily='Poppins'
                         fontSize='22px'
                         bgColor='#fff'
+                        color='#0E1035'
                         borderRadius='16px'
+                        _hover={{ bg: '#0E1035', color:'#fff' }}
+                        _active={{
+                          bg: '#0E1035',
+                          color:'#fff',
+                          transform: 'scale(0.98)',
+                          borderColor: '#bec3c9',
+                        }}
                         >
                         Contact Us
                     </Button>

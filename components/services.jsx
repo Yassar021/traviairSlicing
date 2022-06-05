@@ -2,18 +2,18 @@ import { Box, Flex, Image, SimpleGrid, Spacer, Stack, Text } from "@chakra-ui/re
 
 const Services = () => {
     return(
-        <Box px='120px' bgColor='#0E1035' pb='90px'>
+        <Box px={{md:'40px',lg:'60px',xl:'120px','2xl':'120px'}} bgColor='#0E1035' pb='90px'>
             <Box pt='44px' textAlign='center'>
                 <Text fontSize='24px' fontWeight='700' color='#fff'>Companies that have used our services</Text>  
-                <SimpleGrid mt='75px' columns={4} spacing={'153px'}>
-                  <Image w='110px' src="/a-service.png" alt="#" />
+                <SimpleGrid mx='auto' mt='75px' columns={{md:1,lg:4,xl:4,'2xl':4}} spacing={'153px'}>
+                  <Image w={{base:'auto',md:'auto',xl:'110px'}} src="/a-service.png" alt="#" />
                   <Image my='auto' src="/b-service.png" alt="#" />   
                   <Image my='auto' src="/c-service.png" alt="#" />   
                   <Image my='auto' src="/d-service.png" alt="#" />   
                 </SimpleGrid>    
             </Box>
             <Box mt='91px'>
-                <Flex direction='row'>
+                <Flex direction={{base:'column',md:'column',lg:'row',xl:'row','2xl':'row'}}>
                     <Box>
                         <Image src='logo-service.png' w='852px' h='444px' alt="" />
                     </Box>

@@ -2,13 +2,13 @@ import {Box, Button, Flex, Image, Spacer, Stack, Text} from "@chakra-ui/react"
 
 const Testimoni = () => {
     return(
-        <Box pl='120px'>
-            <Flex d='row' pb='300px' pt='62px' justifyContent='space-between'>
+        <Box pl={{md:'40px',lg:'60px',xl:'120px','2xl':'120px'}}>
+            <Flex d='row' pb='200px' pt='62px' justifyContent='space-between'>
                 <Box my='auto'  position='absolute'>
                     <Text fontSize='48px' fontWeight='700' color='#0E1035'>This is what clients say about us</Text>
                     <Flex direction='column'>
-                        <Stack direction='row' spacing='24px' mt='65px'>
-                            <Box shadow='lg' px='25px' py='32px' w='550px' h= '340px' borderRadius='30px'>
+                        <Stack direction={{base:'column',md:'column',lg:'row',xl:'row','2xl':'row'}} spacing='24px' mt='65px'>
+                            <Box shadow='lg' px='25px' py='32px' w='550px' h= '340px' bgColor='#fff' borderRadius='30px'>
                                 <Stack mb='32px' direction='row' spacing='24px' alignItems='center'>
                                     <Image src='/a-testi.png' w='100px' h='100px' alt='' />
                                     <Box>
@@ -35,7 +35,7 @@ const Testimoni = () => {
                                     </Stack>
                                 </Stack>
                             </Box>
-                            <Box shadow='lg' px='25px' py='32px' w='550px' h= '340px' bgColor='#fff' borderRadius='30px'>
+                            <Box display={{base:'none',md:'none',lg:'none',xl:'inline', '2xl':'inline'}} shadow='lg' px='25px' py='32px' w='550px' h= '340px' bgColor='#fff' borderRadius='30px'>
                                 <Stack mb='32px' direction='row' spacing='24px' alignItems='center'>
                                     <Image src='/b-testi.png' w='100px' h='100px' alt='' />
                                     <Box>
@@ -64,7 +64,7 @@ const Testimoni = () => {
                                 </Stack>
                             </Box>
                         </Stack>
-                        <Box px='112px' py='155px' bgImage='/bg-contact.png' w='1138px' mt='160px' ml={{xl:'40px','2xl':'280px'}} h='323px' backgroundSize='cover' backgroundRepeat='no-repeat'>
+                        <Box display={{base:'none',md:'none',lg:'none',xl:'inline', '2xl':'inline'}} px={{lg:'74px',xl:'112px','2xl':'112px'}} pt={{lg:'78px',xl:'155px','2xl':'155px'}} pb={{lg:'138px',xl:'155px','2xl':'155px'}} bgImage='/bg-contact.png' w={{lg:'845px',xl:'1138px','2xl':'1138px'}} mt='160px' ml={{lg:'10px',xl:'40px','2xl':'280px'}} h={{lg:'237px',xl:'323px','2xl':'323px'}} backgroundSize='cover' backgroundRepeat='no-repeat'>
                             <Flex direction='row' justifyContent='space-between' my='auto'>
                                 <Text fontSize='38px' fontWeight='600' color='#fff'>Dont hesitate to contact us</Text>
                                 <Button 
@@ -78,14 +78,15 @@ const Testimoni = () => {
                                     color='#0E1035'
                                     bgColor='#fff'
                                     borderRadius='31px'
-                                    _hover={{ bg: '#fff' }}
+                                    _hover={{ bg: '#0E1035', color:'#fff' }}
                                     _active={{
-                                    bg: '#fff',
+                                    bg: '#0E1035',
+                                    color:'#fff',
                                     transform: 'scale(0.98)',
                                     borderColor: '#bec3c9',
                                     }}
                                     >
-                                    Booking Now
+                                    Contact Us
                                 </Button>
                             </Flex>
                         </Box>
